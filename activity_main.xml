@@ -1,0 +1,33 @@
+<!-- res/layout/activity_main.xml -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/tvCoordinates"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="X: 0.00, Y: 0.00"
+        android:textSize="18sp"
+        android:layout_gravity="center"/>
+
+    <com.example.myapplication1.MapView
+        android:id="@+id/mapView"
+        android:layout_width="match_parent"
+        android:layout_height="500dp"
+        android:background="@android:color/darker_gray"
+        android:elevation="5dp"
+        tools:ignore="MissingClass" />
+
+    <Button
+        android:id="@+id/btnRestart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Restart"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center"/>
+</LinearLayout>
